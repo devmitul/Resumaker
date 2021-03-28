@@ -1,15 +1,16 @@
 import React, { Component } from "react";
+import { FacebookShareButton, FacebookIcon, WhatsappIcon, WhatsappShareButton } from "react-share";      
 import Logo from "../assets/logo.svg";
 
 class Nav extends Component {
   render() {
     return (
-      <div className="flex justify-between bg-white mx-auto px-4 py-2 print:hidden">
+      <div className="bg flex justify-between bg-white mx-auto px-4 py-2 print:hidden">
         <a href="/">
           <img
             className="w-12 inline-block"
             src={Logo}
-            alt="tech-resume-logo"
+            alt="Resumaker-logo"
           />
         </a>
         {this.props.showDownloadBtn?<button
@@ -35,6 +36,19 @@ class Nav extends Component {
           </svg>{" "}
           Download PDF
         </button>:""}
+       <container>
+          <segment>
+            <FacebookShareButton
+            url="https://prosresumaker.netlify.app"
+            quote="Welcome"
+            hashtag="#react">
+              <FacebookIcon logoFillcolor="white" round={true}></FacebookIcon>
+              </FacebookShareButton>
+              <WhatsappShareButton title="Sharing content" url="https://prosresumaker.netlify.app">
+                <WhatsappIcon logoFillcolor="white" round={true}></WhatsappIcon>
+              </WhatsappShareButton>
+            </segment>
+          </container>
       </div>
     );
   }
