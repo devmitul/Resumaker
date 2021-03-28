@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Switch } from "react-router-dom";
+import { FacebookIcon, FacebookShareButton, WhatsappIcon, WhatsappShareButton } from 'react-share';
 import LandingPage from '../src/components/LandingPage';
 import TemplateData from '../src/components/TemplateData';
 
