@@ -275,7 +275,7 @@ class TemplateData extends Component {
 
   render() {
     return (
-      <div className="w-screen h-full bg-gray-light text-gray-dark font-sans">
+      <div className="bg w-screen h-full bg-gray-light text-gray-dark font-sans">
         <Nav showDownloadBtn={true} />
         <div className="flex p-3 print:p-0">
           <form className="w-2/5 flex flex-col justify-evenly print:hidden">
